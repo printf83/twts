@@ -1,0 +1,35 @@
+{
+	"name": "@printf83/twts",
+	"version": "0.0.1",
+	"description": "typescript webpack template",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"clean": "node scripts/clean.cjs",
+		"copy": "node scripts/copy.cjs",
+		"build": "npm run copy && webpack",
+		"rebuild": "npm run clean && npm run copy && webpack",
+		"debug": "npm run copy && webpack -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/printf83/twts.git"
+	},
+	"keywords": [
+		"typescript",
+		"webpack",
+		"template"
+	],
+	"author": "Hamzah A",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/printf83/twts/issues"
+	},
+	"homepage": "https://github.com/printf83/twts#readme",
+	"devDependencies": {
+		"ts-loader": "^9.4.4",
+		"typescript": "^5.1.6",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^5.1.4"
+	}
+}
